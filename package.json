@@ -1,0 +1,22 @@
+{
+  "name": "landscripter",
+  "author": "NicoNoClaste",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "HTML canvas version of megadrive game landstalker",
+  "keywords": [
+    "game",
+    "canvas",
+    "landstalker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies":{
+    "light-server": "latest"
+  },
+  "scripts": {
+    "dev": "light-server -s src -p 3000 -w \"src/**.js, src/**.css, src/**.html\" -o /?debug=true#waterfall"
+  }
+}

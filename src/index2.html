@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LandScripter</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+  <!-- maps https://vgmaps.com/Atlas/Genesis/#L -->
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+body, html{
+  background:black;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+canvas{
+  border:none;
+  background-color:none;
+  display:block;
+  position:fixed;
+  left:0;
+  top:0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition:top 0.2s ease-in-out;
+}
+canvas::after{
+  content:'a';
+  display:block;
+  width:0;
+  height:0;
+  overflow:hidden;
+  font-family: 'Press Start 2P', monospace;
+}
+</style>
+</head>
+<body>
+<!--
+
+********************************************
+TO CHECK
+********
+    - message box design and transition effect
+    
+    - goto another map transition effect
+
+
+********************************************
+TO FIX
+******
+    - jump
+      jump is OK but climbing on object doesn't work...
+      first remove all about climbing and try another way
+
+
+********************************************
+TO DO
+*****
+    - find more sprites
+    
+    - status bar (lifebar etc.)
+
+    - attack
+
+    - add another map
+
+    - add transition / goto another map
+
+-->
+
+<script>
+var bgFullWidth = 1790;
+var bgFullHeight = 1774;
+var mapImage = 'img/scene1.gif';
+
+var bgFullWidth = 5744 * 2;
+var bgFullHeight = 2676 * 2;
+var mapImage = 'img/fullmap1.png';
+var bgLeft = -5950;
+var bgTop = -50;
+
+var mapLeft = 4000;
+var mapTop = 3200;
+
+var nigelLeftStart = 964 + 800;
+var nigelTopStart = 1501 - 230;
+var NigelSliceLeftStart = 972 + 800;
+var NigelSliceTopStart = 1430 - 230;
+
+var gameBorders = [
+[1703, 1268],
+[1762, 1236],
+[1893, 1300],
+[2071, 1199],
+[2302, 1301],
+[2235, 1322],
+[2087, 1266],
+[1886, 1347],
+[1736, 1287]
+];
+
+var _deco = [];
+var _obstacles = [];
+var _changeZones =[];
+var exit1 =[];
+var _exitZones =[];
+
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
