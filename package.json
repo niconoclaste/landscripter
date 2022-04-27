@@ -6,17 +6,19 @@
   "description": "HTML canvas version of megadrive game landstalker",
   "keywords": [
     "game",
+    "HTML",
     "canvas",
-    "landstalker"
+    "javascript"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/niconoclaste/landscripter"
   },
   "devDependencies":{
     "light-server": "latest"
   },
   "scripts": {
-    "dev": "light-server -s src -p 3000 -w \"src/**.js, src/**.css, src/**.html\" -o /?debug=true#waterfall"
+    "dev": "light-server -s src -q -p 3000 -w \"src/**/**.js, src/**/**.html\" -o /greenmaze.html?debug=true#waterfall",
+    "start": "light-server -s src -q -p 3000 --no-reload -o /greenmaze.html#waterfall"
   }
 }
