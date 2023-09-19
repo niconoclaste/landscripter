@@ -46,7 +46,7 @@ if(location.hash == '#road2masan'){
   nigelOrientationX = 'right';
   nigelOrientationY = 'up';
 }
-if(location.hash === '#greenmaze' || location.hash === ''){
+if(location.hash == '#greenmaze'){
   mapLeft = 920;
   mapTop = 400;
 
@@ -78,9 +78,6 @@ function getScene(){
 
   function scene(){
     let theHash = location.hash;
-    if(theHash === ''){
-	return 'waterfall';
-    }
     return theHash.substr(1);
   }
 
