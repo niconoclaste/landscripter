@@ -1,7 +1,7 @@
 if(window.location.pathname === '/' && window.location.hash === ''){
   window.location.href = window.location.href + 'greenmaze.html#waterfall';
 }else if(window.logcation.pathname === '/greenmaze.html' && window.location.hash === ''){
-  window.location.hash = 'waterfall';
+  window.location.href = window.location.href + '#waterfall';
 }
 
 function logout(text){console.log(text)};
