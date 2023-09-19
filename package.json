@@ -18,7 +18,7 @@
     "light-server": "latest"
   },
   "scripts": {
-    "dev": "light-server -s src -q -p 3000 -w \"src/**/**.js, src/**/**.html\" -o /greenmaze.html?debug=true#waterfall",
-    "start": "light-server -s src -q -p 3000 --no-reload -o /greenmaze.html#waterfall"
+    "debug": "light-server -s src -q -p 3000 -w \"src/**/**.js, src/**/**.html\" -o /greenmaze.html?debug=true#waterfall",
+    "dev": "light-server -s src -q -p 3000 --no-reload -o /greenmaze.html#waterfall"
   }
 }
