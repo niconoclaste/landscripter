@@ -1,6 +1,6 @@
 if(window.location.pathname === '/' && window.location.hash === ''){
   window.location.href = window.location.href + 'greenmaze.html#waterfall';
-}else if(window.logcation.pathname === '/greenmaze.html' && window.location.hash === ''){
+}else if(window.location.pathname === '/greenmaze.html' && window.location.hash === ''){
   window.location.href = window.location.href + '#waterfall';
 }
 
