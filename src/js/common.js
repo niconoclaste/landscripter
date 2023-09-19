@@ -1,3 +1,7 @@
+if(window.location.pathname === '/' && window.location.hash === ''){
+  window.location.href = window.location.href + "greenmaze.html#waterfall";
+}
+
 function logout(text){console.log(text)};
 let debug = false; // debug state
 if(window.location.href.indexOf('?debug=true') > -1){
